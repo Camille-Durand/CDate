@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1616961118 source:c:\users\admin\desktop\cdate\main.cpp
+	<iostream>
+
+1616972446 source:c:\users\admin\desktop\cdate\src\cdate.cpp
+	"CDate.h"
+
+1617000728 c:\users\admin\desktop\cdate\include\cdate.h
+
