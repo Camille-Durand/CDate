@@ -4,20 +4,20 @@
 
 class CDate
 {
-    public:
-        CDate(int a, int m, int j, int h, int mn, int sec);
+    public: // méthodes
+        CDate(int a, int m, int j, int h, int mn, int s);
         virtual ~CDate();
 
-        int getDate(int& a, int& m, int& j, int& h, int& mn, int& sec);
-        void ajtsec();
+        int getDate(int& a, int& m, int& j, int& h, int& mn, int& s);
+        void ajtsec(); //ajout secondes
 
-        bool operator>(CDate d1);
-        bool operator<(CDate d1);
-        bool operator==(CDate d1);
+        bool operator>(CDate d1); //surcharge >
+        bool operator<(CDate d1); //surcharge <
+        bool operator==(CDate d1); //surcharge ==
 
     protected:
 
-    private:
+    private: // attributs
         int annee;
         int mois;
         int jour;

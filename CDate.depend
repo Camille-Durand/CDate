@@ -7,8 +7,12 @@
 
 1617000728 c:\users\admin\desktop\cdate\include\cdate.h
 
-1617222510 source:c:\users\admin\desktop\github\cdate git\cdate\src\cdate.cpp
+1617223345 source:c:\users\admin\desktop\github\cdate git\cdate\src\cdate.cpp
 	"CDate.h"
 
-1617222510 c:\users\admin\desktop\github\cdate git\cdate\include\cdate.h
+1617223303 c:\users\admin\desktop\github\cdate git\cdate\include\cdate.h
+
+1617222671 source:c:\users\admin\desktop\github\cdate git\cdate\src\tu_cdate.cpp
+	<iostream>
+	"../include/CDate.h"
 

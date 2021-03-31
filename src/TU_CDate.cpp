@@ -142,18 +142,18 @@ void test_egal()//3
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 1ère date
-	// A COMPLETER
+	cout << "On est le " << j << "/" << m << "/" << a << " et il est " << h << ":" << mn << ":" << s << endl;
 
 
 	cout << "Saisir la 2eme date utilisee pour tester" << endl;
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 2ème date
-	// A COMPLETER
+	cout << "On est le " << j << "/" << m << "/" << a << " et il est " << h << ":" << mn << ":" << s << endl;
 
 
 	// Comparer les deux dates avec == et afficher le résultat de la comparaison
-	// A COMPLETER
+	bool CDate::operator==(CDate d1)
 }
 
 //**************************************************************
@@ -180,7 +180,7 @@ void test_sup()//4
 	// A COMPLETER
 
 	// Comparer les deux dates avec > et afficher le résultat de la comparaison
-	// A COMPLETER
+	bool CDate::operator>(CDate d1)
 }
 
 
@@ -210,8 +210,8 @@ void test_inf()//5
 	// A COMPLETER
 
 
-	// Comparer les deux dates avec > et afficher le résultat de la comparaison
-	// A COMPLETER
+	// Comparer les deux dates avec < et afficher le résultat de la comparaison
+	bool CDate::operator<(CDate d1)
 }
 
 //**************************************************************

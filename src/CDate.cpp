@@ -1,37 +1,38 @@
 #include "CDate.h"
 
-CDate::CDate(int a, int m, int j, int h, int mn, int sec)
+//- -- --- ---- --- -- - constructeur - -- --- ---- --- -- -
+CDate::CDate(int a, int m, int j, int h, int mn, int s)
 {
-    //ctor
-    this->annee = a;
-    this-> mois = m;
-    this-> jour = j;
-    this-> heure = h;
-    this-> minute = mn;
-    this-> seconde = sec;
-
+    a = this->annee;
+    m = this-> mois;
+    j = this-> jour;
+    h = this-> heure;
+    mn = this-> minute;
+    s = this-> seconde;
 }
 
+//- -- --- ---- --- -- - destructeur - -- --- ---- --- -- -
 CDate::~CDate()
 {
-    //dtor
+    // [...]
 }
 
-    bool operator>(CDate d1)
-        {
-            if (seconde>59)
-                int mn = mn++;
-                int sec = 0;
-            if (minute>59)
-                int h = h++;
-                int mn = 0;
-            if (heure>23)
-                int j = j++;
-                int h = 0;
-            if (jour>30)
-                int m = m++;
-                int j = 1;
-            if (mois>12)
-                int a = a++;
-                int m = 1;
-        }
+//- -- --- ---- --- -- - bool operator - -- --- ---- --- -- -
+bool CDate::operator==(CDate d1)
+{
+    if(this->annee==this->annee && this->mois==this->mois && this->jour==this->jour && this->heure==this->heure && this->minute==this->minute && this->seconde==this->seconde)
+        return true;
+}
+
+bool CDate::operator<(CDate d1)
+{
+    if(this->annee<this->annee && this->mois<this->mois && this->jour<this->jour && this->heure<this->heure && this->minute<this->minute && this->seconde<this->seconde)
+        return false;
+}
+
+bool CDate::operator>(CDate d1)
+{
+    if(this->annee>this->annee && this->mois>this->mois && this->jour>this->jour && this->heure>this->heure && this->minute>this->minute && this->seconde>this->seconde)
+        return false;
+}
+
