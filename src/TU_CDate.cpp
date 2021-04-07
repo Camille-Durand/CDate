@@ -105,12 +105,11 @@ void test_constructeur()//1
 	int j, m, a,s,mn,h;
 	cout << "Test du constructeur de la classe CDate:" << endl;
 	cout << "-----------------------------------------------" << endl;
-	cout << "Saisir la date utilisee pour tester" << endl;
 
     saisirDate(j,m,a,s,mn,h);
-
+    CDate date(a,m,j,h,mn,s);
 	// Création de la date
-	cout << "On est le " << j << "/" << m << "/" << a << " et il est " << h << ":" << mn << ":" << s << endl;
+	afficherDate(date);
 }
 
 //**************************************************************
@@ -124,7 +123,6 @@ void test_constructeurSansParametre()//2
 	cout << "Test du constructeur sans parametre de la classe CDate:" << endl;
 	cout << "-------------------------------------------------------" << endl;
 
-	cout << "On est le " << "j" << "/" << "m" << "/" << "a" << " et il est " << "h" << ":" << "mn" << ":" << "s" << endl;
 
 }
 
@@ -142,18 +140,24 @@ void test_egal()//3
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 1ère date
-	cout << "On est le " << j << "/" << m << "/" << a << " et il est " << h << ":" << mn << ":" << s << endl;
+	CDate d1(a,m,j,h,mn,s);
 
 
 	cout << "Saisir la 2eme date utilisee pour tester" << endl;
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 2ème date
-	cout << "On est le " << j << "/" << m << "/" << a << " et il est " << h << ":" << mn << ":" << s << endl;
-
+    CDate d2(a,m,j,h,mn,s);
 
 	// Comparer les deux dates avec == et afficher le résultat de la comparaison
-	bool CDate::operator==(CDate d1)
+    if(d1 == d2)
+    {
+        cout << "Les 2 dates sont =" << endl;
+    }
+    else
+    {
+        cout << "Les 2 dates ne sont pas =" << endl;
+    }
 }
 
 //**************************************************************
@@ -171,16 +175,23 @@ void test_sup()//4
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 1ère date
-	// A COMPLETER
+	CDate d1(a,m,j,h,mn,s);
 
 	cout << "Saisir la 2eme date utilisee pour tester" << endl;
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 2ème date
-	// A COMPLETER
+	CDate d2(a,m,j,h,mn,s);
 
 	// Comparer les deux dates avec > et afficher le résultat de la comparaison
-	bool CDate::operator>(CDate d1)
+    if (d1 > d2)
+    {
+        cout << "La 1ere date est + recente que la 2" << endl;
+    }
+    else
+    {
+        cout << "La 2eme date est + recente que la 1" << endl;
+    }
 }
 
 
@@ -199,7 +210,7 @@ void test_inf()//5
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 1ère date
-	// A COMPLETER
+	CDate d1(a,m,j,h,mn,s);
 
 
 
@@ -207,11 +218,18 @@ void test_inf()//5
     saisirDate(j,m,a,s,mn,h);
 
 	// Création de la 2ème date
-	// A COMPLETER
+	CDate d2(a,m,j,h,mn,s);
 
 
 	// Comparer les deux dates avec < et afficher le résultat de la comparaison
-	bool CDate::operator<(CDate d1)
+    if (d1 < d2)
+    {
+        cout << "La 1ere date est - recente que la 2" << endl;
+    }
+    else
+    {
+        cout << "La 2eme date est - recente que la 1" << endl;
+    }
 }
 
 //**************************************************************
@@ -223,6 +241,12 @@ void test_incrementerSec()//6
 	int j, m, a, h, mn, s;
 	cout << "Test de la methode incrementerSec de la classe CDate:" << endl;
 	cout << "--------------------------------------------" << endl;
+    cout << "Saisir la date utilisee pour tester" << endl;
 
+    saisirDate(j,m,a,s,mn,h);
+    CDate date(a,m,j,h,mn,s);
+
+
+    afficherDate(date);
 
 }

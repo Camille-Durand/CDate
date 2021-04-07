@@ -20,19 +20,16 @@ CDate::~CDate()
 //- -- --- ---- --- -- - bool operator - -- --- ---- --- -- -
 bool CDate::operator==(CDate d1)
 {
-    if(this->annee==this->annee && this->mois==this->mois && this->jour==this->jour && this->heure==this->heure && this->minute==this->minute && this->seconde==this->seconde)
-        return true;
+    return(this->annee==this->annee && this->mois==this->mois && this->jour==this->jour && this->heure==this->heure && this->minute==this->minute && this->seconde==this->seconde);
 }
 
 bool CDate::operator<(CDate d1)
 {
-    if(this->annee<this->annee && this->mois<this->mois && this->jour<this->jour && this->heure<this->heure && this->minute<this->minute && this->seconde<this->seconde)
-        return false;
+    if(this->annee<this->annee && this->mois<this->mois && this->jour<this->jour && this->heure<this->heure && this->minute<this->minute && this->seconde<this->seconde);
 }
 
 bool CDate::operator>(CDate d1)
 {
-    if(this->annee>this->annee && this->mois>this->mois && this->jour>this->jour && this->heure>this->heure && this->minute>this->minute && this->seconde>this->seconde)
-        return false;
+    if(this->annee>this->annee && this->mois>this->mois && this->jour>this->jour && this->heure>this->heure && this->minute>this->minute && this->seconde>this->seconde);
 }
 
