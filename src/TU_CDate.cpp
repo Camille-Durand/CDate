@@ -246,7 +246,6 @@ void test_incrementerSec()//6
     saisirDate(j,m,a,s,mn,h);
     CDate date(a,m,j,h,mn,s);
 
-
     afficherDate(date);
 
 }
